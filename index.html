@@ -1,226 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Airbnb</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <div class="container">
+  <body>
+    <header class="fixed-header">
+      <div class="header">
         <div>
-            <img src="airbnb.svg" alt="Airbnb" height="40px">
+          <img src="airbnb.svg" alt="Airbnb" height="40px" />
         </div>
-        <div>
-            <ul class="menu">
-                <li><b>Stays</b></li>
-                <li>Experience</li>
-            </ul>
+        <div class="menu">
+          <b> <a href="">Stays</a></b>
+          <a href="">Experience</a>
         </div>
         <div class="side-bar">
-            <p>Airbnb your home</p>
-            <img width="20" height="20" src="https://img.icons8.com/ios/50/globe--v1.png" alt="globe--v1" />
-            <div class="profile">
-                <img src="https://cdn0.iconfinder.com/data/icons/user-interface-151/24/List_menu_toggle-512.png" alt=""
-                    width="28" height="28" />
-                <img src="https://static-00.iconduck.com/assets.00/profile-major-icon-1024x1024-9rtgyx30.png" alt=""
-                    width="28" height="28" />
-            </div>
+          <p>Airbnb your home</p>
+          <img
+            width="20"
+            height="20"
+            src="https://img.icons8.com/ios/50/globe--v1.png"
+            alt="globe--v1"
+          />
+          <div class="profile">
+            <img
+              src="https://cdn0.iconfinder.com/data/icons/user-interface-151/24/List_menu_toggle-512.png"
+              alt=""
+              width="28"
+              height="28"
+            />
+            <img
+              src="https://static-00.iconduck.com/assets.00/profile-major-icon-1024x1024-9rtgyx30.png"
+              alt=""
+              width="28"
+              height="28"
+            />
+          </div>
         </div>
+      </div>
+
+      <div class="search-bar">
+        <div class="search-section">
+          <label for="where">Where</label><br />
+          <input type="text" id="where" placeholder="Search destinations" />
+        </div>
+        <div class="vertical-bar">|</div>
+        <div class="search-section">
+          <label for="check-in">Check in</label><br />
+          <input type="text" id="check-in" placeholder="Add dates" />
+        </div>
+        <div class="vertical-bar">|</div>
+        <div class="search-section">
+          <label for="check-out">Check out</label><br />
+          <input type="text" id="check-out" placeholder="Add dates" />
+        </div>
+        <div class="vertical-bar">|</div>
+        <div class="search-section">
+          <label for="who">Who</label><br />
+          <input type="text" id="who" placeholder="Add guests" />
+        </div>
+        <button class="search-btn">
+          <img
+            src="https://img.icons8.com/fluency-systems-regular/50/search--v1.png"
+            alt="Search"
+          />
+        </button>
+      </div>
+      <br />
+
+      <hr />
+    </header>
+    <br />
+    <div class="cards-container">
+      <div class="image">
+        <img
+          src="https://th.bing.com/th/id/R.99a8a5004cc4c5451c392571b74431bb?rik=t6uiTa3Dfi20%2fg&riu=http%3a%2f%2fmedia.architecturaldigest.com%2fphotos%2f5640d41b7caa1a6554abcb93%2fmaster%2fpass%2fcontemporary-bedroom-ideas-inspiration-10.jpg&ehk=E0cH6JrxaGH9oAmMqxV9tF1AWRrsCHNpa6p%2bb7N7Kx8%3d&risl=&pid=ImgRaw&r=0"
+          alt="italy"
+          width="300px"
+          height="300px"
+        />
+
+        <div class="description">
+          <b>Rome, Italy</b>
+          <div>
+            <img
+              src="https://img.icons8.com/android/24/filled-star.png"
+              alt="filled-star"
+              height="13"
+              width="13"
+            />
+            <span>4.85</span>
+          </div>
+        </div>
+        <div class="text">
+          <span>Stay with Sergio. Movie producer</span><br />
+          <span>Dec 12-17</span><br /><br />
+          <b>$63 </b><span>night</span>
+        </div>
+      </div>
+
+      <div class="image">
+        <img
+          src="https://th.bing.com/th/id/R.99a8a5004cc4c5451c392571b74431bb?rik=t6uiTa3Dfi20%2fg&riu=http%3a%2f%2fmedia.architecturaldigest.com%2fphotos%2f5640d41b7caa1a6554abcb93%2fmaster%2fpass%2fcontemporary-bedroom-ideas-inspiration-10.jpg&ehk=E0cH6JrxaGH9oAmMqxV9tF1AWRrsCHNpa6p%2bb7N7Kx8%3d&risl=&pid=ImgRaw&r=0"
+          alt="italy"
+          width="300px"
+          height="300px"
+        />
+
+        <div class="description">
+          <b>Rome, Italy</b>
+          <div>
+            <img
+              src="https://img.icons8.com/android/24/filled-star.png"
+              alt="filled-star"
+              height="13"
+              width="13"
+            />
+            <span>4.85</span>
+          </div>
+        </div>
+        <div class="text">
+          <span>Stay with Sergio. Movie producer</span><br />
+          <span>Dec 12-17</span><br /><br />
+          <b>$63 </b><span>night</span>
+        </div>
+      </div>
+
+      <div class="image">
+        <img
+          src="https://th.bing.com/th/id/R.99a8a5004cc4c5451c392571b74431bb?rik=t6uiTa3Dfi20%2fg&riu=http%3a%2f%2fmedia.architecturaldigest.com%2fphotos%2f5640d41b7caa1a6554abcb93%2fmaster%2fpass%2fcontemporary-bedroom-ideas-inspiration-10.jpg&ehk=E0cH6JrxaGH9oAmMqxV9tF1AWRrsCHNpa6p%2bb7N7Kx8%3d&risl=&pid=ImgRaw&r=0"
+          alt="italy"
+          width="300px"
+          height="300px"
+        />
+
+        <div class="description">
+          <b>Rome, Italy</b>
+          <div>
+            <img
+              src="https://img.icons8.com/android/24/filled-star.png"
+              alt="filled-star"
+              height="13"
+              width="13"
+            />
+            <span>4.85</span>
+          </div>
+        </div>
+        <div class="text">
+          <span>Stay with Sergio. Movie producer</span><br />
+          <span>Dec 12-17</span><br /><br />
+          <b>$63 </b><span>night</span>
+        </div>
+      </div>
+
+      <div class="image">
+        <img
+          src="https://th.bing.com/th/id/R.99a8a5004cc4c5451c392571b74431bb?rik=t6uiTa3Dfi20%2fg&riu=http%3a%2f%2fmedia.architecturaldigest.com%2fphotos%2f5640d41b7caa1a6554abcb93%2fmaster%2fpass%2fcontemporary-bedroom-ideas-inspiration-10.jpg&ehk=E0cH6JrxaGH9oAmMqxV9tF1AWRrsCHNpa6p%2bb7N7Kx8%3d&risl=&pid=ImgRaw&r=0"
+          alt="italy"
+          width="300px"
+          height="300px"
+        />
+
+        <div class="description">
+          <b>Rome, Italy</b>
+          <div>
+            <img
+              src="https://img.icons8.com/android/24/filled-star.png"
+              alt="filled-star"
+              height="13"
+              width="13"
+            />
+            <span>4.85</span>
+          </div>
+        </div>
+        <div class="text">
+          <span>Stay with Sergio. Movie producer</span><br />
+          <span>Dec 12-17</span><br /><br />
+          <b>$63 </b><span>night</span>
+        </div>
+      </div>
+
+      <div class="image">
+        <img
+          src="https://th.bing.com/th/id/R.99a8a5004cc4c5451c392571b74431bb?rik=t6uiTa3Dfi20%2fg&riu=http%3a%2f%2fmedia.architecturaldigest.com%2fphotos%2f5640d41b7caa1a6554abcb93%2fmaster%2fpass%2fcontemporary-bedroom-ideas-inspiration-10.jpg&ehk=E0cH6JrxaGH9oAmMqxV9tF1AWRrsCHNpa6p%2bb7N7Kx8%3d&risl=&pid=ImgRaw&r=0"
+          alt="italy"
+          width="300px"
+          height="300px"
+        />
+
+        <div class="description">
+          <b>Rome, Italy</b>
+          <div>
+            <img
+              src="https://img.icons8.com/android/24/filled-star.png"
+              alt="filled-star"
+              height="13"
+              width="13"
+            />
+            <span>4.85</span>
+          </div>
+        </div>
+        <div class="text">
+          <span>Stay with Sergio. Movie producer</span><br />
+          <span>Dec 12-17</span><br /><br />
+          <b>$63 </b><span>night</span>
+        </div>
+      </div>
+
+      <div class="image">
+        <img
+          src="https://th.bing.com/th/id/R.99a8a5004cc4c5451c392571b74431bb?rik=t6uiTa3Dfi20%2fg&riu=http%3a%2f%2fmedia.architecturaldigest.com%2fphotos%2f5640d41b7caa1a6554abcb93%2fmaster%2fpass%2fcontemporary-bedroom-ideas-inspiration-10.jpg&ehk=E0cH6JrxaGH9oAmMqxV9tF1AWRrsCHNpa6p%2bb7N7Kx8%3d&risl=&pid=ImgRaw&r=0"
+          alt="italy"
+          width="300px"
+          height="300px"
+        />
+
+        <div class="description">
+          <b>Rome, Italy</b>
+          <div>
+            <img
+              src="https://img.icons8.com/android/24/filled-star.png"
+              alt="filled-star"
+              height="13"
+              width="13"
+            />
+            <span>4.85</span>
+          </div>
+        </div>
+        <div class="text">
+          <span>Stay with Sergio. Movie producer</span><br />
+          <span>Dec 12-17</span><br /><br />
+          <b>$63 </b><span>night</span>
+        </div>
+      </div>
+
+      <div class="image">
+        <img
+          src="https://th.bing.com/th/id/R.99a8a5004cc4c5451c392571b74431bb?rik=t6uiTa3Dfi20%2fg&riu=http%3a%2f%2fmedia.architecturaldigest.com%2fphotos%2f5640d41b7caa1a6554abcb93%2fmaster%2fpass%2fcontemporary-bedroom-ideas-inspiration-10.jpg&ehk=E0cH6JrxaGH9oAmMqxV9tF1AWRrsCHNpa6p%2bb7N7Kx8%3d&risl=&pid=ImgRaw&r=0"
+          alt="italy"
+          width="300px"
+          height="300px"
+        />
+
+        <div class="description">
+          <b>Rome, Italy</b>
+          <div>
+            <img
+              src="https://img.icons8.com/android/24/filled-star.png"
+              alt="filled-star"
+              height="13"
+              width="13"
+            />
+            <span>4.85</span>
+          </div>
+        </div>
+        <div class="text">
+          <span>Stay with Sergio. Movie producer</span><br />
+          <span>Dec 12-17</span><br /><br />
+          <b>$63 </b><span>night</span>
+        </div>
+      </div>
+
+      <div class="image">
+        <img
+          src="https://th.bing.com/th/id/R.99a8a5004cc4c5451c392571b74431bb?rik=t6uiTa3Dfi20%2fg&riu=http%3a%2f%2fmedia.architecturaldigest.com%2fphotos%2f5640d41b7caa1a6554abcb93%2fmaster%2fpass%2fcontemporary-bedroom-ideas-inspiration-10.jpg&ehk=E0cH6JrxaGH9oAmMqxV9tF1AWRrsCHNpa6p%2bb7N7Kx8%3d&risl=&pid=ImgRaw&r=0"
+          alt="italy"
+          width="300px"
+          height="300px"
+        />
+
+        <div class="description">
+          <b>Rome, Italy</b>
+          <div>
+            <img
+              src="https://img.icons8.com/android/24/filled-star.png"
+              alt="filled-star"
+              height="13"
+              width="13"
+            />
+            <span>4.85</span>
+          </div>
+        </div>
+        <div class="text">
+          <span>Stay with Sergio. Movie producer</span><br />
+          <span>Dec 12-17</span><br /><br />
+          <b>$63 </b><span>night</span>
+        </div>
+      </div>
     </div>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Search Bar Interface</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-
-    <body>
-
-        <div class="search-bar">
-            <div class="search-section">
-                <b>Where</b>
-                <p>Search destinations</p>
-            </div>
-            <div class="vertical-bar">|</div>
-            <div class="search-section">
-                <b>Check-in</b>
-                <p>Add dates</p>
-            </div>
-            <div class="vertical-bar">|</div>
-            <div class="search-section">
-                <b>Check out</b>
-                <p>Add dates</p>
-            </div>
-            <div class="vertical-bar">|</div>
-            <div class="search-section">
-                <b>Who</b>
-                <p>Add guests</p>
-            </div>
-            <button class="search-btn">
-                <img src="https://img.icons8.com/fluency-systems-regular/50/search--v1.png" alt="Search" />
-            </button>
-        </div>
-        <br>
-        <hr>
-        <br>
-        <div class="cards-container">
-            <div class="image">
-                <img src="https://th.bing.com/th/id/R.6b2f014fb60c02354f08888cd2fffe5f?rik=3TUl8j7yI%2fi0dg&pid=ImgRaw&r=0"
-                    alt="italy" width="300px" height="350px" />
-
-                <div class="description">
-                    <b>Rome, Italy</b>
-                    <div>
-                        <img src="https://img.icons8.com/android/24/filled-star.png" alt="filled-star" height="13" width="13"/>
-                        <span>4.85</span>
-                    </div>
-                </div>
-                <div class="text">
-                    <span>Stay with Sergio. Movie producer</span><br>
-                    <span>Dec 12-17</span><br><br>
-                    <b>$63 </b><span>night</span>
-                </div>
-            </div>
-
-            <div class="image">
-                <img src="https://th.bing.com/th/id/R.6b2f014fb60c02354f08888cd2fffe5f?rik=3TUl8j7yI%2fi0dg&pid=ImgRaw&r=0"
-                    alt="italy" width="300px" height="350px" />
-
-                <div class="description">
-                    <b>Rome, Italy</b>
-                    <div>
-                        <img src="https://img.icons8.com/android/24/filled-star.png" alt="filled-star" height="13" width="13"/>
-                        <span>4.85</span>
-                    </div>
-                </div>
-                <div class="text">
-                    <span>Stay with Sergio. Movie producer</span><br>
-                    <span>Dec 12-17</span><br><br>
-                    <b>$63 </b><span>night</span>
-                </div>
-            </div>
-
-            <div class="image">
-                <img src="https://th.bing.com/th/id/R.6b2f014fb60c02354f08888cd2fffe5f?rik=3TUl8j7yI%2fi0dg&pid=ImgRaw&r=0"
-                    alt="italy" width="300px" height="350px" />
-
-                <div class="description">
-                    <b>Rome, Italy</b>
-                    <div>
-                        <img src="https://img.icons8.com/android/24/filled-star.png" alt="filled-star" height="13" width="13"/>
-                        <span>4.85</span>
-                    </div>
-                </div>
-                <div class="text">
-                    <span>Stay with Sergio. Movie producer</span><br>
-                    <span>Dec 12-17</span><br><br>
-                    <b>$63 </b><span>night</span>
-                </div>
-            </div>
-
-            <div class="image">
-                <img src="https://th.bing.com/th/id/R.6b2f014fb60c02354f08888cd2fffe5f?rik=3TUl8j7yI%2fi0dg&pid=ImgRaw&r=0"
-                    alt="italy" width="300px" height="350px" />
-
-                <div class="description">
-                    <b>Rome, Italy</b>
-                    <div>
-                        <img src="https://img.icons8.com/android/24/filled-star.png" alt="filled-star" height="13" width="13"/>
-                        <span>4.85</span>
-                    </div>
-                </div>
-                <div class="text">
-                    <span>Stay with Sergio. Movie producer</span><br>
-                    <span>Dec 12-17</span><br><br>
-                    <b>$63 </b><span>night</span>
-                </div>
-            </div>
-
-            <div class="image">
-                <img src="https://th.bing.com/th/id/R.6b2f014fb60c02354f08888cd2fffe5f?rik=3TUl8j7yI%2fi0dg&pid=ImgRaw&r=0"
-                    alt="italy" width="300px" height="350px" />
-
-                <div class="description">
-                    <b>Rome, Italy</b>
-                    <div>
-                        <img src="https://img.icons8.com/android/24/filled-star.png" alt="filled-star" height="13" width="13"/>
-                        <span>4.85</span>
-                    </div>
-                </div>
-                <div class="text">
-                    <span>Stay with Sergio. Movie producer</span><br>
-                    <span>Dec 12-17</span><br><br>
-                    <b>$63 </b><span>night</span>
-                </div>
-            </div>
-
-            <div class="image">
-                <img src="https://th.bing.com/th/id/R.6b2f014fb60c02354f08888cd2fffe5f?rik=3TUl8j7yI%2fi0dg&pid=ImgRaw&r=0"
-                    alt="italy" width="300px" height="350px" />
-
-                <div class="description">
-                    <b>Rome, Italy</b>
-                    <div>
-                        <img src="https://img.icons8.com/android/24/filled-star.png" alt="filled-star" height="13" width="13"/>
-                        <span>4.85</span>
-                    </div>
-                </div>
-                <div class="text">
-                    <span>Stay with Sergio. Movie producer</span><br>
-                    <span>Dec 12-17</span><br><br>
-                    <b>$63 </b><span>night</span>
-                </div>
-            </div>
-
-            <div class="image">
-                <img src="https://th.bing.com/th/id/R.6b2f014fb60c02354f08888cd2fffe5f?rik=3TUl8j7yI%2fi0dg&pid=ImgRaw&r=0"
-                    alt="italy" width="300px" height="350px" />
-
-                <div class="description">
-                    <b>Rome, Italy</b>
-                    <div>
-                        <img src="https://img.icons8.com/android/24/filled-star.png" alt="filled-star" height="13" width="13"/>
-                        <span>4.85</span>
-                    </div>
-                </div>
-                <div class="text">
-                    <span>Stay with Sergio. Movie producer</span><br>
-                    <span>Dec 12-17</span><br><br>
-                    <b>$63 </b><span>night</span>
-                </div>
-            </div>
-
-            <div class="image">
-                <img src="https://th.bing.com/th/id/R.6b2f014fb60c02354f08888cd2fffe5f?rik=3TUl8j7yI%2fi0dg&pid=ImgRaw&r=0"
-                    alt="italy" width="300px" height="350px" />
-
-                <div class="description">
-                    <b>Rome, Italy</b>
-                    <div>
-                        <img src="https://img.icons8.com/android/24/filled-star.png" alt="filled-star" height="13" width="13"/>
-                        <span>4.85</span>
-                    </div>
-                </div>
-                <div class="text">
-                    <span>Stay with Sergio. Movie producer</span><br>
-                    <span>Dec 12-17</span><br><br>
-                    <b>$63 </b><span>night</span>
-                </div>
-            </div>
-
-
-
-        </div>
-    </body>
-
-    </html>
-
-</body>
-
+  </body>
 </html>
